@@ -197,4 +197,17 @@ footer{
     border-bottom: none;
   }
 
-}
+}/* Add this media query to the existing CSS */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .splash {
+     display: none;
+  }
+ 
+  main {
+     width: 90%;
+  }
+ 
+  footer {
+     grid-template-columns: repeat(2, 1fr);
+  }
+ }
